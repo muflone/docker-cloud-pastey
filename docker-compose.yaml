@@ -1,5 +1,5 @@
 services:
-  pastey:
+  app:
     image: cesura/pastey:0.5.1-slim
     user: nobody:nogroup
     networks:
@@ -7,11 +7,11 @@ services:
     env_file:
       - ./app.env
     volumes:
-      - pastey:/app/data
+      - app:/app/data
 
 networks:
   default:
 
 volumes:
-  pastey:
+  app:
 
