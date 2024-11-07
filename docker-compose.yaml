@@ -1,5 +1,3 @@
-name: pastey
-
 services:
   pastey:
     image: cesura/pastey:0.5.1-slim
