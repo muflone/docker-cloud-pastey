@@ -4,18 +4,15 @@ services:
   pastey:
     image: cesura/pastey:0.5.1-slim
     user: nobody:nogroup
-#    networks:
-#      - web
-    ports:
-      - 5000:5000/tcp
+    networks:
+      - default
     env_file:
       - ./app.env
     volumes:
       - pastey:/app/data
 
-#networks:
-#  web:
-#    external: true
+networks:
+  default:
 
 volumes:
   pastey:
