@@ -1,8 +1,6 @@
 services:
   pastey:
     image: cesura/pastey:0.5.1-slim
-    container_name: pastey
-    restart: unless-stopped
     user: nobody:nogroup
     networks:
       - web
