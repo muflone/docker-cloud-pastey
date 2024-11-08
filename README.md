@@ -2,7 +2,7 @@ Docker Pastey for Cloud
 ========================
 **Description:** Docker for Pastey
 
-**Copyright:** 2023 Fabio Castelli (Muflone) <muflone(at)muflone.com>
+**Copyright:** 2023-2024 Fabio Castelli (Muflone) <muflone(at)muflone.com>
 
 **License:** GPL-3+
 
@@ -22,4 +22,8 @@ Installation
 Build the container using Docker compose with:
 
     docker-compose up -d
+
+If you use Docker swarm you can use:
+
+   docker stack deploy docker-cloud-pastey --compose-file docker-compose.yaml
 
