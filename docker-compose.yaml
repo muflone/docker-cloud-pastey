@@ -1,18 +1,17 @@
 services:
   app:
     image: cesura/pastey:0.5.1-slim
+    container_name: pastey
+    restart: unless-stopped
     user: nobody:nogroup
     networks:
       - public
     env_file:
       - ./app.env
     volumes:
-      - data:/app/data
+      - ./data:/app/data
 
 networks:
   public:
     external: true
-
-volumes:
-  data:
 
