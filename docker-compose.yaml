@@ -1,7 +1,7 @@
 services:
   app:
-    image: cesura/pastey:0.5.1-slim
     container_name: pastey
+    image: cesura/pastey:0.5.1-slim
     restart: unless-stopped
     user: nobody:nogroup
     networks:
