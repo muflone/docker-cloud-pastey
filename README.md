@@ -21,9 +21,5 @@ Installation
 
 Build the container using Docker compose with:
 
-    docker-compose up -d
-
-If you use Docker swarm you can use:
-
-   docker stack deploy docker-cloud-pastey --compose-file docker-compose.yaml
+    docker compose up -d
 
