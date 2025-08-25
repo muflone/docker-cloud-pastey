@@ -10,6 +10,7 @@ services:
       - ./app.env
     volumes:
       - ./data:/app/data
+      - ./fixes/routes.py:/app/pastey/routes.py:ro
 
 networks:
   public:
