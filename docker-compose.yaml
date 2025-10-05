@@ -5,7 +5,7 @@ services:
     restart: unless-stopped
     user: nobody:nogroup
     networks:
-      - public
+      - default
     env_file:
       - ./app.env
     volumes:
@@ -13,6 +13,7 @@ services:
       - ./fixes/routes.py:/app/pastey/routes.py:ro
 
 networks:
-  public:
+  default:
+    name: web
     external: true
 
